@@ -1,2 +1,9 @@
 baseurl: /
 
+author: Chino
+
+title: "Chino的非典型技术博客"
+
+pygments: true
+
+encoding: utf-8
