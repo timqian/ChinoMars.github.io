@@ -1,14 +1,22 @@
 ---
 layout: default
-title: Chino的非典型技术博客
 ---
 
-<h2>{{ page.title }}</h2>
-<p>最新文章</p>
-<ul>
-	{% for post in site.posts %}
+<section>
+	<ul>
+
+		{% for post in site.posts %}
+
 		<li>
-			{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+			<div class="post-date">
+				<span>{{ post.date | date: "%b %d, %Y" }}</span>
+			</div>
+			<div class="title">
+				<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+			</div>
 		</li>
-	{% endfor %}
-</ul>
+
+		{% endfor %}
+
+	</ul>
+</section>
