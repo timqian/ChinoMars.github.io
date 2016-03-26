@@ -12,11 +12,38 @@ permlink: /:title
 timezone: Asia/Chongqing
 
 # Site Build
-highlighter: pygments
-pygments: true
+highlighter: rouge
 markdown: kramdown
 kramdown:
     input: GFM
 sass:
     style: :compressed
+
+# Other Settings
+exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile" ]
+gems:
+  - jekyll-sitemap
+
+compress_html:
+    clippings:      all
+    ingore:
+        envs:       [ "test" ]
+
+defaults:
+  -
+    scope:
+      path:         ""
+    values:
+      layout:       "null"
+  -
+    scope:
+      type:         "pages"
+    values:
+      layout:       "page"
+  -
+    scope:
+      type:         "posts"
+    values:
+      layout:       "post"
+
 encoding: utf-8
