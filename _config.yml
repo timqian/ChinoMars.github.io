@@ -1,0 +1,22 @@
+# Site Info
+title: "Chino的非典型技术博客"
+description: "非典型程序员，职业神经病"
+
+# Author Info
+author_name: "Chino"
+author_email: chinomask@gmail.com
+#twitter_username: 
+
+# Site Settings
+permlink: /:title
+timezone: Asia/Chongqing
+
+# Site Build
+highlighter: pygments
+pygments: true
+markdown: kramdown
+kramdown:
+    input: GFM
+sass:
+    style: :compressed
+encoding: utf-8
