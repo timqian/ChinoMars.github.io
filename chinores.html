@@ -147,6 +147,13 @@
     		margin-left: 10px;
     	}
 
+    	.tool {
+    		background: #eee;
+            color: #666;
+    		padding: 2px 0px;
+            margin-left: 0px;	
+      	}
+
     	@media only screen and (max-width: 40em) {
     		body {
     			margin: 0;
@@ -253,7 +260,7 @@
 			<div class="sectionContent">
 				<div class="skillBlock">
 					<span class="title">编程语言：</span>
-					<span>C/C++, Matlab, Java, Python</span>
+					<span>C/C++, Matlab, Java, Python, MySQL</span>
 				</div>
 				<div class="skillBlock">
 					<span class="title">操作系统：</span>
@@ -261,29 +268,10 @@
 				</div>
 				<div class="skillBlock">
 					<span class="title">其他：</span>
-					<span>git, MySQL</span>
+					<span>git, vim</span>
 				</div>
 			</div>
 		</div><!--  /#skill -->
-
-		<div class="sectionLine"></div>
-
-		<div id="workBlock">
-			<div class="sectionName">
-				<span>实习经历</span>
-			</div>
-			<div class="sectionContent">
-				<div class="blockHeader">
-					<span class="title">游戏服务端开发工程师</span>
-					<span class="date">2015.07 - 2015.10</span>
-					<div class="company">九玩网络科技有限公司</div>
-				</div>
-				<ul class="highlights">
-					<li>使用C++实现，工具为Visual Studio 2012</li>
-					<li>负责游戏(蓝月传奇)服务端开发工作，参与旧游戏数据库维护，解决由测试人员和策划人员提交的Bug等</li>
-				</ul>
-			</div>
-		</div><!--  /#InternShipExperiance -->
 
 		<div class="sectionLine"></div>
 
@@ -293,13 +281,14 @@
 			</div>
 			<div class="sectionContent">
 				<div class="blockHeader">
-					<span class="title"><a href="https://github.com/ChinoMars/bccAndroidController" target="_blank">光纤长度精密测量仪器<string>安卓端控制软件</string></a></span>
+					<span class="title"><!-- <a href="https://github.com/ChinoMars/bccAndroidController" target="_blank"> -->光纤长度精密测量仪<string>安卓应用</string><!-- </a> --></span>
+                    <span class="tool">(Java, IntelliJ Idea 15)</span>
 					<!-- <span class="current"></span> -->
 					<span class="date">2016.02 - 至今</span>
 				</div>
 				<ul class="highlights">
-					<li>使用Java实现，工具为IntelliJ Idea 15</li>
-					<li>负责设计并开发一个安卓应用，用于与下位机通信，实现控制下位机工作状态并显示下位机测量信息以及绘制相应的波形图</li>
+					<li>负责设计并开发一个<strong>安卓应用</strong>，通过蓝牙通信实现安卓应用与下位机之间的数据传输</li>
+					<li>使用MPAndroid实现实时数据波形绘制，通过多线程编程有效避免程序卡顿</li>
 				</ul>
 			</div>
 
@@ -307,25 +296,48 @@
 				<div class="blockHeader">
 					<span class="title">基于宽带激光的水下目标估计</span>
 					<!-- <span class="current"></span> -->
+                    <span class="tool">(Matlab, Matlab2014b)</span>
 					<span class="date">2015.03 - 2015.12</span>
 				</div>
 				<ul class="highlights">
-					<li>使用Matlab实现，工具为Matlab 2014b</li>
-					<li>负责信号处理和分析，采用经优化的匹配滤波算法实现目标信号的识别并估计目标深度</li>
+					<li>负责信号处理和分析，采用经优化的匹配滤波算法使回波信号匹配成功率达<strong>82％</strong></li>
+					<li>通过估计回波抵达时间计算目标深度信息，使其误差降低至<strong>6％</strong>左右</li>
+                    <li>实现数据的自动化处理，有效提高了数据的处理效率</li>
 				</ul>
 			</div>
 
 			<div class="sectionContent">
 				<div class="blockHeader">
-					<span class="title"><a href="https://github.com/ChinoMars/HGLinkedList" target="_blank">学校人员数据管理系统</a></span>
+					<span class="title"><!-- <a href="https://github.com/ChinoMars/HGLinkedList" target="_blank"> -->学校人员数据管理系统<!-- </a> --></span>
+                    <span class="tool">(C++, VS2013)</span>
 					<span class="date">2015.01 - 2015.03</span>
 				</div>
 				<ul>
-					<li>使用C++实现，工具为Visual Studio 2013</li>
-					<li>负责数据结构设计，利用异质链表实现存储多种数据对象的链式数据结构，提高系统对数据的兼容性</li>
+					<li>负责数据结构设计，通过设计继承自虚基类的子类实现<strong>单个数据结构</strong>中的<strong>7类</strong>人员数据的存储，保证了覆盖所有人员类型数据</li>
+                    <li>通过基类指针实现数据的链式存储结构，有效提高了数据的插入与删除速度</li>
 				</ul>
 			</div>
 		</div><!--  /#projectExperiance -->
+
+        <div class="sectionLine"></div>
+
+        <div id="workBlock">
+            <div class="sectionName">
+                <span>实习经历</span>
+            </div>
+            <div class="sectionContent">
+                <div class="blockHeader">
+                    <span class="title">游戏服务端开发工程师</span>
+                    <span class="tool">(C++, VS2012)</span>
+                    <span class="date">2015.07 - 2015.10</span>
+                    <div class="company">九玩网络科技有限公司</div>
+                </div>
+                <ul class="highlights">
+                    <li>负责游戏(蓝月传奇)服务端开发工作，完成背包系统、矿石熔炼养成系统、世界等级加成系统以及玩家登录模块的<strong>4个</strong>模块的工作</li>
+                    <li>解决线上游戏的多个Bug，同时维护游戏数据库<em>(MySQL)</em></li>
+                </ul>
+            </div>
+        </div><!--  /#InternShipExperiance -->
 
 		<div class="sectionLine"></div>
 
@@ -335,8 +347,8 @@
 			</div>
 			<div class="sectionContent">
 				<div class="blockHeader">
-					<span class="title">求是潮网站产品经理</span>
-					<span class="date">2010.09-2013.05</span>
+					<span class="title">互联网产品运维</span>
+					<span class="date">2010.09 - 2013.05</span>
 					<div class="company">浙江大学求是潮工作团队产品运营部门</div>
 				</div>
 				<ul class="highlights">
@@ -355,7 +367,7 @@
 			</div>
 			<div class="sectionContent">
 				<div class="skillBlock">
-					英语CET-6<em>(519/710)</em>：具有出色的英语听说读写能力
+					英语CET-6<em>(519)</em>：具有出色的英语听说读写能力
 				</div>
 			</div>
 		</div>
