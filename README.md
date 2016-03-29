@@ -1,4 +1,4 @@
-# Chino的个人博客
+# [Chino的个人博客](http://chinois.me/)
 
 ## Credit
 This theme is based on Leonard Lamprecht's [Jekyll theme][1] and released under [MIT license](LICENSE)
